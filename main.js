@@ -3,9 +3,9 @@ const path = require('path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        height: 400,
-        width: 1200,
-        resizable: false,
+        height: 750,
+        width: 1400,
+        resizable: true,
         title: "键盘按键测试器",
         autoHideMenuBar: true,
         acceptFirstMouse: true,
