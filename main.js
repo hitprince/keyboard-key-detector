@@ -3,7 +3,8 @@ const path = require('path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        fullscreen: true,
+        height: 400,
+        width: 1200,
         autoHideMenuBar: true,
         acceptFirstMouse: true,
         webPreferences: {
