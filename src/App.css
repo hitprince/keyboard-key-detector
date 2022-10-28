@@ -37,6 +37,10 @@
   }
 }
 
-.button-press {
+.button-up {
   background-color: #40a9ff;
+}
+
+.button-down {
+  background-color: chocolate;
 }
