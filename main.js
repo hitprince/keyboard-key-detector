@@ -6,7 +6,7 @@ const createWindow = () => {
         height: 750,
         width: 1400,
         resizable: true,
-        title: "键盘按键测试器",
+        title: "键盘按键检测器",
         autoHideMenuBar: true,
         acceptFirstMouse: true,
         webPreferences: {

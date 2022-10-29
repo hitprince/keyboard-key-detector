@@ -661,10 +661,19 @@ class App extends React.Component {
                     <div className="keyboard-key-line">
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 175,
+                                'button-down': this.state.pressingCode === 177,
+                                'button-up': this.state.pressedSet.has(177)
+                            })}>后退</Button>
+                        <Button
+                            className={classNames({
+                                'button-down': this.state.pressingCode === 179,
                                 'button-up': this.state.pressedSet.has(179)
-                            })}>停止</Button>
-
+                            })}>暂停</Button>
+                        <Button
+                            className={classNames({
+                                'button-down': this.state.pressingCode === 176,
+                                'button-up': this.state.pressedSet.has(176)
+                            })}>快进</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 172,

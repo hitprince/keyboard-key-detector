@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 键盘按键检测器
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+本程序基于 [Create React App](https://github.com/facebook/create-react-app)开发， 与目前的其他按键检测器相比，增加了多媒体键的检测，后续可以补充更多多媒体键。 本程序阻止了浏览器的默认行为，如F11全屏，F12打开开发者工具等
 
-## Available Scripts
+## 可运行的命令
 
-In the project directory, you can run:
+### `yarn start`
 
-### `npm start`
+会自动使用默认浏览器打开站点 [http://localhost:3000](http://localhost:3000). 即可使用本检测程序
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `yarn build`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+编译到目录 `build` 下.
 
-### `npm test`
+### `yarn electronstart`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+使用窗口方式打开，先yarn build再执行本命令
 
-### `npm run build`
+## 键码对照表
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 功能键键码值
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| 键   | 键码  | 键   | 键码  |
+|-----|-----|-----|-----|
+| F1  | 112 | F7  | 118 |
+| F2  | 113 | F8  | 119 |
+| F3  | 114 | F9  | 120 |
+| F4  | 115 | F10 | 121 |
+| F5  | 116 | F11 | 122 |
+| F6  | 117 | F12 | 123 |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 数字键盘上的各键键码值
 
-### `npm run eject`
+| 键   | 键码  | 键     | 键码  |
+|-----|-----|-------|-----|
+| 0   | 96  | 8     | 104 |
+| 1   | 97  | 9     | 105 |
+| 2   | 98  | *     | 106 |
+| 3   | 99  | +     | 107 |
+| 4   | 100 | Enter | 108 |
+| 5   | 101 | -     | 109 |
+| 6   | 102 | .     | 110 |
+| 7   | 103 | /     | 111 |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 字母和数字键的键码值
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| 键   | 键码  | 键   | 键码  | 键   | 键码  | 键   | 键码  |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| A   | 65  | J   | 74  | S   | 83  | 1   | 49  |
+| B   | 66  | K   | 75  | T   | 84  | 2   | 50  |
+| C   | 67  | L   | 76  | U   | 85  | 3   | 51  |
+| D   | 68  | M   | 77  | V   | 86  | 4   | 52  |
+| E   | 69  | N   | 78  | W   | 87  | 5   | 53  |
+| F   | 70  | O   | 79  | X   | 88  | 6   | 54  |
+| G   | 71  | P   | 80  | Y   | 89  | 7   | 55  |
+| H   | 72  | Q   | 81  | Z   | 90  | 8   | 56  |
+| I   | 73  | R   | 82  | 0   | 48  | 9   | 57  |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 控制键键码值
+| 键         | 键码  | 键         | 键码  | 键          | 键码  | 键   | 键码  |
+|-----------|-----|-----------|-----|------------|-----|-----|-----|
+| BackSpace | 8   | Esc       | 27  | RightArrow | 39  | -_  | 189 |
+| Tab       | 9   | MENU      | 93  | DownArrow  | 40  | .>  | 190 |
+| WIN       | 91  | Page Up   | 33  | Insert     | 45  | /?  | 191 |
+| Enter     | 13  | Page Down | 34  | Delete     | 46  | `~  | 192 |
+| Shift     | 16  | End       | 35  | Num  Lock  | 144 | [{  | 219 |
+| Control   | 17  | Home      | 36  | ;:         | 186 | \   | 220 |
+| Alt       | 18  | LeftArrow | 37  | =+         | 187 | ]}  | 221 |
+| CapsLock  | 20  | UpArrow   | 38  | ,<         | 188 | '"  | 222 |
+| PrtSc     | 44  | PrtLk     | 145 | Pause      | 19  |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 多媒体键
+| 键   | 键码  | 键   | 键码  |
+|-----|-----|-----|-----|
+| 后退  | 177 | 浏览器 | 172 |
+| 暂停  | 179 | 邮件  | 180 |
+| 快进  | 176 | 搜索  | 170 |
+| 静音  | 173 | 收藏  | 171 |
+| 音量减 | 174 |
+| 音量加 | 175 |
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 运行界面
