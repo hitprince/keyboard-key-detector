@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "main.js",
+  "author": {
+    "email": "407762945@qq.com"
+  },
   "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -20,7 +23,8 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "electronstart": "electron ."
+    "electronstart": "electron .",
+    "package": "electron-packager ./ key-detector –platform=win32 --out=package --electron-version 21.2.0  --overwrite --icon=./build/favicon.ico"
   },
   "eslintConfig": {
     "extends": [

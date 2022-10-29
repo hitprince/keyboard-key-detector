@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Button, Row, Col} from "antd";
+import {LeftOutlined, DownOutlined, RightOutlined, UpOutlined} from '@ant-design/icons'
 import React from "react";
 import classNames from "classnames";
 import ButtonGroup from "antd/es/button/button-group";
@@ -18,7 +19,7 @@ class App extends React.Component {
     render() {
         return <div className="App">
             <header className="App-header">
-                按键测试
+                键盘按键检测器
             </header>
             <div className="keyboard">
                 <div className="keyboard-area">
@@ -248,8 +249,7 @@ class App extends React.Component {
                                 className={classNames({
                                     'button-down': this.state.pressingCode === 20,
                                     'button-up': this.state.pressedSet.has(20)
-                                })}>CAPE
-                            LOK</Button>
+                                })}>CAPS LK</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 65,
@@ -390,8 +390,8 @@ class App extends React.Component {
                                 })}>CTRL</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
-                                    'button-down': this.state.pressingCode === 9100,
-                                    'button-up': this.state.pressedSet.has(9100)
+                                    'button-down': this.state.pressingCode === 91,
+                                    'button-up': this.state.pressedSet.has(91)
                                 })}>WIN</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
@@ -406,20 +406,20 @@ class App extends React.Component {
                                 })}>空格</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
-                                    'button-down': this.state.pressingCode === 9101,
-                                    'button-up': this.state.pressedSet.has(9101)
-                                })}>WIN</Button>
+                                    'button-down': this.state.pressingCode === 1801,
+                                    'button-up': this.state.pressedSet.has(1801)
+                                })}>ALT</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
                                     'button-down': this.state.pressingCode === 255,
                                     'button-up': this.state.pressedSet.has(255)
                                 })}>FN</Button>
-
                         <Button style={{width: '66px'}}
                                 className={classNames({
-                                    'button-down': this.state.pressingCode === 1801,
-                                    'button-up': this.state.pressedSet.has(1801)
-                                })}>ALT</Button>
+                                    'button-down': this.state.pressingCode === 93,
+                                    'button-up': this.state.pressedSet.has(93)
+                                })}>MENU</Button>
+
                         <Button style={{width: '66px'}}
                                 className={classNames({
                                     'button-down': this.state.pressingCode === 1701,
@@ -461,10 +461,11 @@ class App extends React.Component {
                             })}>HOME</Button>
 
 
-                        <Button className={classNames({
+                        <Button
+                            className={classNames({
                             'button-down': this.state.pressingCode === 33,
                             'button-up': this.state.pressedSet.has(33)
-                        })}>PAGE<br/>UP</Button>
+                        })}>PgUp</Button>
 
 
                     </div>
@@ -482,7 +483,7 @@ class App extends React.Component {
                         <Button className={classNames({
                             'button-down': this.state.pressingCode === 34,
                             'button-up': this.state.pressedSet.has(34)
-                        })}>PAGE<br/>DOWN
+                        })}>PgDn
                         </Button>
 
                     </div>
@@ -492,28 +493,28 @@ class App extends React.Component {
                     </div>
                     <div className="keyboard-key-line">
                         <Button style={{visibility: 'hidden'}}></Button>
-                        <Button
+                        <Button icon={<UpOutlined />}
                             className={classNames({
                                 'button-down': this.state.pressingCode === 38,
                                 'button-up': this.state.pressedSet.has(38)
-                            })}>上</Button>
+                            })}></Button>
                     </div>
                     <div className="keyboard-key-line">
-                        <Button
+                        <Button icon={<LeftOutlined />}
                             className={classNames({
                                 'button-down': this.state.pressingCode === 37,
                                 'button-up': this.state.pressedSet.has(37)
-                            })}>左</Button>
-                        <Button
+                            })}></Button>
+                        <Button icon={<DownOutlined />}
                             className={classNames({
                                 'button-down': this.state.pressingCode === 40,
                                 'button-up': this.state.pressedSet.has(40)
-                            })}>下</Button>
-                        <Button
+                            })}></Button>
+                        <Button icon={<RightOutlined />}
                             className={classNames({
                                 'button-down': this.state.pressingCode === 39,
                                 'button-up': this.state.pressedSet.has(39)
-                            })}>右</Button>
+                            })}></Button>
                     </div>
                 </div>
                 <div style={{marginRight: '0px'}} className="keyboard-area">
@@ -561,58 +562,58 @@ class App extends React.Component {
                             className={classNames({
                                 'button-down': this.state.pressingCode === 103,
                                 'button-up': this.state.pressedSet.has(103)
-                            })}>7</Button>
+                            })}>7<br/>HOME</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 104,
                                 'button-up': this.state.pressedSet.has(104)
-                            })}>8</Button>
+                            })}>8<br/><div className={"rotatePositive90"}>&lt;</div></Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 105,
                                 'button-up': this.state.pressedSet.has(105)
-                            })}>9</Button>
+                            })}>9<br/>PgUp</Button>
                     </div>
                     <div className="keyboard-key-line">
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 100,
                                 'button-up': this.state.pressedSet.has(100)
-                            })}>4</Button>
+                            })}>4<br/>&lt;</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 101,
                                 'button-up': this.state.pressedSet.has(101)
-                            })}>5</Button>
+                            })}>5<br/></Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 102,
                                 'button-up': this.state.pressedSet.has(102)
-                            })}>6</Button>
+                            })}>6<br/>&gt;</Button>
                     </div>
                     <div className="keyboard-key-line">
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 97,
                                 'button-up': this.state.pressedSet.has(97)
-                            })}>1</Button>
+                            })}>1<br/>END</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 98,
                                 'button-up': this.state.pressedSet.has(98)
-                            })}>2</Button>
+                            })}>2<br/><div className={"rotatePositive270"}>&lt;</div></Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 99,
                                 'button-up': this.state.pressedSet.has(99)
-                            })}>3</Button>
+                            })}>3<br/>PgUp</Button>
                     </div>
                     <div className="keyboard-key-line">
                         <Button style={{width: '105px'}}
                                 className={classNames({
                                     'button-down': this.state.pressingCode === 96,
                                     'button-up': this.state.pressedSet.has(96)
-                                })}>0</Button>
+                                })}>0<br/>INS</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 110,
@@ -740,12 +741,6 @@ class App extends React.Component {
                 code = 1700;
             } else {
                 code = 1701;
-            }
-        } else if (code === 91) {
-            if (e.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {
-                code = 9100;
-            } else {
-                code = 9101;
             }
         }
         return code;

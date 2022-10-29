@@ -82,6 +82,18 @@
   pointer-events:none;
 }
 
+.rotatePositive90 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg)
+}
+
+.rotatePositive270 {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg)
+}
+
 
 
 
