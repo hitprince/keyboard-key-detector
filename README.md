@@ -57,17 +57,17 @@
 | I   | 73  | R   | 82  | 0   | 48  | 9   | 57  |
 
 ### 控制键键码值
-| 键         | 键码  | 键         | 键码  | 键          | 键码  | 键   | 键码  |
-|-----------|-----|-----------|-----|------------|-----|-----|-----|
-| BackSpace | 8   | Esc       | 27  | RightArrow | 39  | -_  | 189 |
-| Tab       | 9   | MENU      | 93  | DownArrow  | 40  | .>  | 190 |
-| WIN       | 91  | Page Up   | 33  | Insert     | 45  | /?  | 191 |
-| Enter     | 13  | Page Down | 34  | Delete     | 46  | `~  | 192 |
-| Shift     | 16  | End       | 35  | Num  | win:144 mac:12 | [{  | 219 |
-| Control   | 17  | Home      | 36  | ;:         | 186 | \   | 220 |
-| Alt       | 18  | LeftArrow | 37  | =+         | 187 | ]}  | 221 |
-| CapsLock  | 20  | UpArrow   | 38  | ,<         | 188 | '"  | 222 |
-| PrtSc     | win:44 mac:124  | PrtLk     | win:145 mac:125 | Pause      | win:19 mac:126  |
+| 键         | 键码             | 键         | 键码              | 键          | 键码             | 键   | 键码  |
+|-----------|----------------|-----------|-----------------|------------|----------------|-----|-----|
+| BackSpace | 8              | Esc       | 27              | RightArrow | 39             | -_  | 189 |
+| Tab       | 9              | MENU      | 93              | DownArrow  | 40             | .>  | 190 |
+| WIN       | 91             | Page Up   | 33              | Insert     | 45             | /?  | 191 |
+| Enter     | 13             | Page Down | 34              | Delete     | 46             | `~  | 192 |
+| Shift     | 16             | End       | 35              | Num        | win:144 mac:12 | [{  | 219 |
+| Control   | 17             | Home      | 36              | ;:         | 186            | \   | 220 |
+| Alt       | 18             | LeftArrow | 37              | =+         | 187            | ]}  | 221 |
+| CapsLock  | 20             | UpArrow   | 38              | ,<         | 188            | '"  | 222 |
+| PrtSc     | win:44 mac:124 | PrtLk     | win:145 mac:125 | Pause      | win:19 mac:126 |
 
 ### 多媒体键
 | 键   | 键码  | 键   | 键码  |
