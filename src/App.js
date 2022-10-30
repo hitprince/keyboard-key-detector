@@ -295,7 +295,7 @@ class App extends React.Component {
                             })}>K</Button>
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 72,
+                                'button-down': this.state.pressingCode === 76,
                                 'button-up': this.state.pressedSet.has(76)
                             })}>L</Button>
                         <Button
@@ -411,9 +411,9 @@ class App extends React.Component {
                                 })}>ALT</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
-                                    'button-down': this.state.pressingCode === 255,
-                                    'button-up': this.state.pressedSet.has(255)
-                                })}>FN</Button>
+                                    'button-down': this.state.pressingCode === 92,
+                                    'button-up': this.state.pressedSet.has(92)
+                                })}>WIN</Button>
                         <Button style={{width: '66px'}}
                                 className={classNames({
                                     'button-down': this.state.pressingCode === 93,
