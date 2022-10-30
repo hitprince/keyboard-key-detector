@@ -584,7 +584,7 @@ class App extends React.Component {
                             className={classNames({
                                 'button-down': this.state.pressingCode === 101,
                                 'button-up': this.state.pressedSet.has(101)
-                            })}>5<br/></Button>
+                            })}>5<br/>&nbsp;</Button>
                         <Button
                             className={classNames({
                                 'button-down': this.state.pressingCode === 102,
@@ -701,8 +701,8 @@ class App extends React.Component {
                     <div className="keyboard-key-line">
                         当前按键码： <div>{this.state.latestCode}</div>
                     </div>
-                    <div  className="keyboard-key-line">
-                        <Button style={{pointerEvents: 'auto',minWidth:'100px'}} type="primary" onClick={this.clear}>重置</Button>
+                    <div style={{justifyContent: 'center'}} className="keyboard-key-line">
+                        <Button style={{pointerEvents: 'auto',minWidth:'10vw'}} type="primary" shape="round" onClick={this.clear}>重置</Button>
                     </div>
                 </div>
             </div>

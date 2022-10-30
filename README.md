@@ -80,4 +80,4 @@
 | 音量加 | 175 |
 
 ### 运行界面
-![image](https://github.com/hitprince/keyboard-key-detector/blob/master/public/%E9%94%AE%E7%9B%98%E6%8C%89%E9%94%AE%E6%A3%80%E6%B5%8B%E5%99%A8.png)
+![image](https://github.com/hitprince/keyboard-key-detector/blob/master/public/key-detector.png)

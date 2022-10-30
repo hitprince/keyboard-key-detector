@@ -56,9 +56,10 @@
 
 .keyboard-area {
   display: -webkit-flex;
-  margin: 20px 10px;
+  margin: 2vh 1vh;
   display: flex;
   flex-direction: column;
+  background-color: azure;
 }
 
 .keyboard-key-line {
