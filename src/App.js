@@ -432,8 +432,8 @@ class App extends React.Component {
                     <div className="keyboard-key-line">
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 44,
-                                'button-up': this.state.pressedSet.has(44)
+                                'button-down': this.state.pressingCode === 44 || this.state.pressingCode === 124,
+                                'button-up': this.state.pressedSet.has(44) || this.state.pressedSet.has(124)
                             })}>PrtSc</Button>
                         <Button
                             className={classNames({
@@ -541,8 +541,8 @@ class App extends React.Component {
                     <div className="keyboard-key-line">
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 144,
-                                'button-up': this.state.pressedSet.has(144)
+                                'button-down': this.state.pressingCode === 144 || this.state.pressingCode === 12,
+                                'button-up': this.state.pressedSet.has(144) || this.state.pressedSet.has(12)
                             })}>NUM</Button>
                         <Button
                             className={classNames({

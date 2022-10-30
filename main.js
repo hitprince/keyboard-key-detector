@@ -21,6 +21,7 @@ app.whenReady().then(() => {
     createWindow()
 })
 
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') app.quit()
-})
+//mac依旧直接关闭
+//app.on('window-all-closed', () => {
+//    if (process.platform !== 'darwin') app.quit()
+//})
