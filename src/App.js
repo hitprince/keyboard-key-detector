@@ -437,13 +437,13 @@ class App extends React.Component {
                             })}>PrtSc</Button>
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 145,
-                                'button-up': this.state.pressedSet.has(145)
+                                'button-down': this.state.pressingCode === 145|| this.state.pressingCode === 125,
+                                'button-up': this.state.pressedSet.has(145) || this.state.pressedSet.has(125)
                             })}>PrtLk</Button>
                         <Button
                             className={classNames({
-                                'button-down': this.state.pressingCode === 19,
-                                'button-up': this.state.pressedSet.has(19)
+                                'button-down': this.state.pressingCode === 19|| this.state.pressingCode === 126,
+                                'button-up': this.state.pressedSet.has(19) || this.state.pressedSet.has(126)
                             })}>Pause</Button>
 
                     </div>
