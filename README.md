@@ -4,10 +4,10 @@
 
 ## 编译
 ### 安装依赖
-####npm install -g npm@8.19.2
-####npm install -g yarn
+#### npm install -g npm@8.19.2
+#### npm install -g yarn
 ### 构建
-####`yarn build`
+#### `yarn build`
 编译到目录 `build` 下.
 ## 运行
 ### `yarn start`
