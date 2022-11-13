@@ -24,7 +24,7 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "electronstart": "electron .",
-    "package": "electron-packager ./ key-detector –platform=win32 --out=package --electron-version 21.2.0  --overwrite --icon=./build/favicon.ico"
+    "package": "electron-packager ./ key-detector –platform=darwin --out=package --electron-version 21.2.0  --overwrite --icon=./build/favicon.ico"
   },
   "eslintConfig": {
     "extends": [

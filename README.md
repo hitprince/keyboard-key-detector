@@ -1,16 +1,17 @@
 # 键盘按键检测器
 
-本程序基于 [Create React App](https://github.com/facebook/create-react-app)开发， 与目前的其他按键检测器相比，增加了多媒体键的检测，后续可以补充更多多媒体键。 本程序阻止了浏览器的默认行为，如F11全屏，F12打开开发者工具等
+本程序基于 [Create React App](https://github.com/facebook/create-react-app)开发， 与目前的其他按键检测器相比，增加了多媒体键的检测并兼容了Mac，后续可以补充更多多媒体键。 本程序阻止了浏览器的默认行为，如F11全屏，F12打开开发者工具等
 
-## 可运行的命令
-
-### `yarn start`
-
-会自动使用默认浏览器打开站点 [http://localhost:3000](http://localhost:3000). 即可使用本检测程序
-
-### `yarn build`
-
+## 编译
+### 安装依赖
+####npm install -g npm@8.19.2
+####npm install -g yarn
+### 构建
+####`yarn build`
 编译到目录 `build` 下.
+## 运行
+### `yarn start`
+会自动使用默认浏览器打开站点 [http://localhost:3000](http://localhost:3000). 即可使用本检测程序
 
 ### `yarn electronstart`
 
